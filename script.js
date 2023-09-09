@@ -23,13 +23,11 @@ daysOfWeek.forEach((day, index) => {
 
 //To get the current UTC time in milliseconds.
 function updateTime() {
-  const Dayy = new Date();
+  const now = new Date();
   const timeToday = document.querySelector('[data-testid="currentUTCTime"]');
-  const hours = Dayy.getUTCHours();
-  const minutes = Dayy.getUTCMinutes();
-  const seconds = Dayy.getUTCSeconds();
-  const milliseconds = Dayy.getUTCMilliseconds();
-  timeToday.innerHTML = `The current UTC time in milliseconds is: ${hours}: ${minutes}: ${seconds}.${milliseconds}ms.`;
+  const milliseconds = now.getUTCMilliseconds();
+  console.log(milliseconds);
+  timeToday.innerHTML = `The current UTC time in milliseconds is: ${milliseconds}ms.`;
   timeToday.classList = "font";
 }
 updateTime();
