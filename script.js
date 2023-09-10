@@ -16,18 +16,16 @@ const currentDay = Day.getDay();
 daysOfWeek.forEach((day, index) => {
   // Check if the index of day value is equal to the returned value of getDay()
   if (index == currentDay) {
-    today.innerHTML = `The current Day of the week is: ${day}.`;
+    today.innerHTML = day;
     today.classList = "font";
   }
 });
 
 //To get the current UTC time in milliseconds.
 function updateTime() {
-  const now = new Date();
+  const now = new Date().getTime();
   const timeToday = document.querySelector('[data-testid="currentUTCTime"]');
-  const milliseconds = now.getUTCMilliseconds();
-  console.log(milliseconds);
-  timeToday.innerHTML = `The current UTC time in milliseconds is: ${milliseconds}ms.`;
+  timeToday.innerHTML = now;
   timeToday.classList = "font";
 }
 updateTime();
