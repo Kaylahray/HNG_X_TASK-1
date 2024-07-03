@@ -2,38 +2,72 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>HNG-X TASK-1</title>
   </head>
   <body>
-    <div class="container">
-      <div class="left">
-        <img
-          data-testid="slackDisplayImage"
-          src="./Image/chichi.jpg"
-          alt="chioma christopher"
-          class="image"
-        />
+    <header>
+      <img
+        src="./Image/profile.jpg"
+        alt="Profile Picture"
+        data-testid="slackProfilePicture"
+      />
+      <div class="details">
+        <h1 data-testid="slackDisplayName">c.h.i.o.m.a</h1>
+        <h3 data-testid="slackEmail">
+          chiomachristopher91@gmail.com
+        </h3>
       </div>
+    </header>
+    <main class="main">
+      <section>
+        <div class="display">
+          <h2>Current Time</h2>
+          <span data-testid="currentTimeUTC"></span>
+        </div>
+        <div class="display">
+          <h2>Current Day</h2>
+          <span data-testid="currentDay"></span>
+        </div>
+      </section>
+      <section class="section2">
+        <h2>My Tech Goals for the Next 2 Years</h2>
+        <p>
+          Master advanced JavaScript concepts and learn backend
+          technologies like Node.js and Express.
+          <mark>
+            Build and deploy full-stack applications, enhancing my
+            personal project portfolio.
+          </mark>
+          Contribute to open-source projects and participate in
+          hackathons and tech meetups.
+          <mark>
+            Improve problem-solving skills through regular coding
+            challenges and stay updated with the latest tech trends
+            and tools.
+          </mark>
+          Incorporate thorough testing practices into all projects.
+        </p>
+      </section>
+    </main>
 
-      <div class="right">
-        <h2 data-testid="slackUserName" class="username">Chioma Christopher</h2>
-
-        <p data-testid="currentDayOfTheWeek"></p>
-        <p data-testid="currentUTCTime"></p>
-
-        <p data-testid="myTrack" class="font">Frontend.</p>
-
-        <a
-          data-testid="githubURL"
-          href="https://github.com/Kaylahray/HNG_X_TASK-1"
-        >
-          Github Source Code
-        </a>
-      </div>
-    </div>
-
+    <footer>
+      <a href="https://hng.tech/learn" data-testid="hngLink"
+        >HNG Learn</a
+      >
+      <a href="https://keyword.dog/" data-testid="keywordLink"
+        >Keyword Dog</a
+      >
+      <a
+        href="https://scrapeanyweb.site/"
+        data-testid="scrapeanywebLink"
+        >Scrape Any Web</a
+      >
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

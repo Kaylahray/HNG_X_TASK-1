@@ -1,5 +1,5 @@
 //  TO get the current day of the week.
-const today = document.querySelector('[ data-testid="currentDayOfTheWeek"]');
+const today = document.querySelector('[ data-testid="currentDay"]');
 
 const daysOfWeek = [
   "Sunday",
@@ -24,7 +24,9 @@ daysOfWeek.forEach((day, index) => {
 //To get the current UTC time in milliseconds.
 function updateTime() {
   const now = new Date().getTime();
-  const timeToday = document.querySelector('[data-testid="currentUTCTime"]');
+  const timeToday = document.querySelector(
+    '[data-testid="currentTimeUTC"]'
+  );
   timeToday.innerHTML = now;
   timeToday.classList = "font";
 }
