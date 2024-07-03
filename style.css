@@ -26,6 +26,10 @@ footer {
   align-items: center;
   margin-top: 1rem;
 }
+.font {
+  color: rgb(238, 150, 34);
+  font-size: larger;
+}
 .main {
   display: flex;
   width: 90%;

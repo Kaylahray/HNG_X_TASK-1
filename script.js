@@ -17,7 +17,7 @@ daysOfWeek.forEach((day, index) => {
   // Check if the index of day value is equal to the returned value of getDay()
   if (index == currentDay) {
     today.innerHTML = day;
-    today.classList = "font";
+    today.classList.add("font");
   }
 });
 
@@ -28,7 +28,7 @@ function updateTime() {
     '[data-testid="currentTimeUTC"]'
   );
   timeToday.innerHTML = now;
-  timeToday.classList = "font";
+  timeToday.classList.add("font");
 }
 updateTime();
 
